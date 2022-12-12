@@ -1,35 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - prints the alphabet in lowercase.
  *
- * Return: Always 0 (Success)
+ * Return: Aiways 0.
  */
-
 int main(void)
 {
-	int a, b;
+	char lowercase;
 
-	for (a = '0'; a < '9'; a++)
-	{
-		for (b = a + 1; b <= '9'; b++)
-		{
-			if (a != b)
-			{
-				putchar(a);
-				putchar(b);
+	for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
+		putchar(lowercase);
 
-				if (a == '8' && b == '9')
-					continue;
-
-				putchar(',');
-				putchar(' ');
-			}
-		}
-	}
 	putchar('\n');
 
 	return (0);
 }
-
- 
