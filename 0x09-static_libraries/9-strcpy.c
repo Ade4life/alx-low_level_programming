@@ -1,4 +1,4 @@
-nclude "main.h"
+include "main.h"
 /**
 * _strcpy - Copy paste string
 *@dest: destination
@@ -16,3 +16,4 @@ inc++;
 *(dest + inc) = '\0';
 return (dest);
 }
+
