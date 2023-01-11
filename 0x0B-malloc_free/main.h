@@ -3,7 +3,7 @@
 
 /**
 * File: main.h
-* Auth: Raymond Omoraka
+* Auth: Adebayo-Qasim Taofiq
 * Desc: Header file containing prototypes for all functions
 *       used in the 0x0B-malloc_free directory.
 */
