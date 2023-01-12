@@ -16,7 +16,8 @@ for (length = 0; length < size; length++)
 {
 for (breadth = 0; breadth < size; breadth++)
 _putchar('#')
-if (length == size - 1
+
+if (length == size - 1)
 continue;
 _putchar('\n');
 }
