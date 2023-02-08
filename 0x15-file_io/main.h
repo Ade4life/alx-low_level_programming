@@ -1,6 +1,13 @@
 #ifndef _MAIN_
 #define _MAIN_
 
+/*
+* File: main.h
+* Auth: Adebayo-Qasim Taofiq
+* Desc: Header file containing prototype for all functions
+*       written in the 0x14-file_io directory
+*/
+
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
