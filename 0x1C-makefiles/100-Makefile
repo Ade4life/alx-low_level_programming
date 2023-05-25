@@ -1,32 +1,29 @@
-# 2-Makefile
+# Usage: make [all/clean/oclean/fclean] -f [file]
 
-# Setting variables
+
 CC = gcc
-SRC = main.c holberton.c
-NAME = holberton
-OBJ = $(SRC:.c=.o) # Substitution References
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-# This is declare to making this rules a prerequisite of the special target
-.PHONY: all clean oclean fclean
+# standard rule to say rules below are not filenames
+.PHONY: all clean oclean fclean re
 
-# Rule all: Build the holberton executable file
-# 1. Implicity rule to updating .o files
-# 2. Then compile with .o files and executable
+# makes executable
 all: m.h $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-# Deletes all Emacs and Vim temporary files along with the executable
+# deletes tmp files & executable
 clean:
 	$(RM) *~ $(NAME)
 
-# Deletes the object files
+# deletes object files
 oclean:
 	$(RM) $(OBJ)
 
-# Deletes all Emacs and Vim temporary files, the executable,
-# and the object files
+# deletes all (tmp files, executable, & obj files)
 fclean: clean oclean
 
-# Forces recompilation of all source files
+# deletes all & recompiles all source files
 re: oclean all
